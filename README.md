@@ -39,16 +39,17 @@ docs/           架构与设计文档
 
 ## 开发
 
-> **当前状态**：技术栈已定稿，monorepo 脚手架尚未搭建。以下命令将在骨架就绪后可用。
-
 前置要求：Node 20+（LTS）、pnpm 9+
 
 ```bash
-pnpm install      # 安装依赖
-pnpm dev          # 启动 web + worker（Turborepo）
+pnpm install            # 安装依赖
+cp .env.example .env    # 配置环境变量
+pnpm dev                # 启动 web + worker（Turborepo）
+pnpm typecheck          # 全量类型检查
+pnpm lint               # Biome 检查
 ```
 
-环境变量见 `.env.example`（待补充）。
+> `apps/mobile` 为占位，阶段二用 Expo 初始化（见 [tech-stack §5](docs/architecture/tech-stack.md)）。
 
 ## 文档
 
