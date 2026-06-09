@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build & cache
+dist/
+build/
+out/
+.next/
+.turbo/
+.expo/
+*.tsbuildinfo
+
+# Environment (never commit secrets)
+.env
+.env.*
+!.env.example
+
+# Test
+coverage/
+
+# Editor & tooling
+.cursor/
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+*.log
